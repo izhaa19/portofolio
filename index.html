@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moh Distyar Meizha Yusuf - Portofolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">DMY<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#education">Pendidikan</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#certificates">Sertifikat</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <div class="avatar-ring">
+          <img src="avatar-placeholder.png" alt="Moh Distyar Meizha Yusuf" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="avatar-fallback"><i class="fas fa-user"></i></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Moh Distyar<br /><span>Meizha Yusuf</span></h1>
+        <div class="hero-roles">
+          <span class="role-tag">💻 Web Developer</span>
+          <span class="role-tag">📱 Mobile Developer</span>
+          <span class="role-tag">🎬 Videografer</span>
+        </div>
+        <p class="hero-desc">Mahasiswa D4 Teknik Informatika Politeknik Negeri Jember dengan passion di Software Development, UI/UX Design, dan Creative Media.</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Tentang Saya</span>
+        <h2 class="section-title">Ringkasan Profil</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Saya adalah mahasiswa D4 Teknik Informatika Politeknik Negeri Jember semester 4 dengan minat pada pengembangan perangkat lunak, UI/UX Design, dan Web Development. Memiliki kemampuan dasar dalam PHP, HTML, CSS, dan Java, serta terus mengembangkan keterampilan melalui berbagai proyek dan pembelajaran mandiri.</p>
+          <p>Selain itu, saya juga aktif sebagai freelance videografer dengan pengalaman dalam video liputan, livestreaming, serta visual jockey menggunakan vMix, OBS, dan Resolume Arena. Dengan IPK 3,60, saya dikenal disiplin, bertanggung jawab, serta mampu bekerja secara individu maupun tim.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">3.60</span>
+              <span class="stat-label">IPK</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Proyek</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Tahun Freelance</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills">
+          <h3>Keahlian Teknis</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4><i class="fas fa-code"></i> Programming</h4>
+              <div class="skill-tags">
+                <span>PHP</span><span>Java</span><span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fas fa-mobile-alt"></i> Development</h4>
+              <div class="skill-tags">
+                <span>Web Dev</span><span>Mobile Dev</span><span>Backend</span><span>Fullstack</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fas fa-paint-brush"></i> Design & Media</h4>
+              <div class="skill-tags">
+                <span>UI/UX</span><span>vMix</span><span>OBS</span><span>Resolume Arena</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fas fa-database"></i> Database</h4>
+              <div class="skill-tags">
+                <span>Basis Data</span><span>Manajemen DB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Karir</span>
+        <h2 class="section-title">Pengalaman</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Backend Programmer</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Aplikasi MOKAPOS (Project Based Learning)</p>
+              </div>
+              <span class="timeline-date">Sep 2024 – Jan 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Mengembangkan dan mengelola sistem backend untuk aplikasi kasir berbasis desktop.</li>
+              <li>Mengelola database transaksi hingga mampu menangani pencatatan penjualan secara real-time.</li>
+              <li>Mengoptimalkan performa sistem agar lebih stabil dan efisien.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Backend</span><span>Database</span><span>Desktop App</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Backend Programmer</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Aplikasi E-Konter (Project Based Learning)</p>
+              </div>
+              <span class="timeline-date">Mar 2025 – Mei 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Mengembangkan fitur frontend dan backend untuk sistem manajemen penjualan konter HP.</li>
+              <li>Membangun sistem transaksi, manajemen stok, dan pencatatan pelanggan.</li>
+              <li>Mengintegrasikan database untuk mendukung operasional aplikasi.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Frontend</span><span>Backend</span><span>Manajemen Stok</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Fullstack Developer (Mobile)</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Aplikasi posCare (Project Based Learning)</p>
+              </div>
+              <span class="timeline-date">Sep 2025 – Nov 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Mengembangkan aplikasi mobile untuk pengelolaan data posyandu.</li>
+              <li>Membangun fitur pencatatan data balita, jadwal, dan laporan kesehatan.</li>
+              <li>Mengintegrasikan antara aplikasi mobile dengan aplikasi web agar saling terhubung satu sama lain.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Mobile Dev</span><span>Fullstack</span><span>API Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-accent"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Freelance Videografer & Visual Jockey (VJ)</h3>
+                <p class="timeline-company"><i class="fas fa-video"></i> Freelance</p>
+              </div>
+              <span class="timeline-date">Apr 2023 – Sekarang</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Menangani produksi video untuk berbagai jenis event (seminar, dokumentasi, dll).</li>
+              <li>Mengelola livestreaming dengan multi-camera setup.</li>
+              <li>Mengoperasikan software visual seperti vMix, OBS, dan Resolume Arena untuk kebutuhan live production.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>vMix</span><span>OBS</span><span>Resolume Arena</span><span>Livestreaming</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Latar Belakang</span>
+        <h2 class="section-title">Pendidikan</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card edu-card-main">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-info">
+            <h3>Politeknik Negeri Jember</h3>
+            <p class="edu-degree">D4 Teknik Informatika</p>
+            <span class="edu-date">2024 – Sekarang</span>
+            <ul class="edu-courses">
+              <li>Basis Data</li>
+              <li>Pemrograman Berorientasi Objek (Java)</li>
+              <li>Rekayasa Perangkat Lunak</li>
+              <li>Pengembangan Aplikasi Berbasis Web</li>
+              <li>Pengembangan Aplikasi Mobile</li>
+              <li>Jaringan Komputer</li>
+              <li>Manajemen Proyek Perangkat Lunak</li>
+            </ul>
+          </div>
+          <div class="edu-badge">IPK 3.60</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-info">
+            <h3>SMAN 1 Nganjuk</h3>
+            <p class="edu-degree">IPS</p>
+            <span class="edu-date">2021 – 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section section-alt" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Karya Saya</span>
+        <h2 class="section-title">Portofolio</h2>
+      </div>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+          <div class="portfolio-icon"><i class="fas fa-baby"></i></div>
+          <div class="portfolio-content">
+            <span class="portfolio-type">Website & Mobile App</span>
+            <h3>posCare</h3>
+            <p>Aplikasi Posyandu Balita — sistem pencatatan data balita, jadwal, dan laporan kesehatan yang terintegrasi antara mobile dan web.</p>
+            <div class="portfolio-tags">
+              <span>Fullstack</span><span>Mobile</span><span>Web</span>
+            </div>
+            <div class="portfolio-date">Sep 2025 – Nov 2025</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-icon"><i class="fas fa-cash-register"></i></div>
+          <div class="portfolio-content">
+            <span class="portfolio-type">Desktop Application</span>
+            <h3>MOKAPOS</h3>
+            <p>Aplikasi kasir berbasis desktop dengan sistem backend untuk pencatatan penjualan secara real-time dan manajemen transaksi.</p>
+            <div class="portfolio-tags">
+              <span>Backend</span><span>Desktop</span><span>Database</span>
+            </div>
+            <div class="portfolio-date">Sep 2024 – Jan 2025</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="portfolio-icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="portfolio-content">
+            <span class="portfolio-type">Web Application</span>
+            <h3>E-Konter</h3>
+            <p>Sistem manajemen penjualan konter HP dengan fitur transaksi, manajemen stok, dan pencatatan pelanggan.</p>
+            <div class="portfolio-tags">
+              <span>Frontend</span><span>Backend</span><span>Stok</span>
+            </div>
+            <div class="portfolio-date">Mar 2025 – Mei 2025</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card portfolio-card-video">
+          <div class="portfolio-icon"><i class="fas fa-film"></i></div>
+          <div class="portfolio-content">
+            <span class="portfolio-type">Video Production</span>
+            <h3>Wisuda Telkom University Surabaya 2025</h3>
+            <p>Produksi video multicam dan livestreaming untuk acara wisuda Telkom University Surabaya.</p>
+            <div class="portfolio-tags">
+              <span>Multicam</span><span>Livestreaming</span><span>vMix</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="portfolio-link"><i class="fab fa-youtube"></i> Tonton di YouTube</a>
+            </div>
+            <div class="portfolio-date">Okt 2025</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card portfolio-card-video">
+          <div class="portfolio-icon"><i class="fas fa-star"></i></div>
+          <div class="portfolio-content">
+            <span class="portfolio-type">Video Production</span>
+            <h3>Live Sparkling Nganjuk Carnival</h3>
+            <p>Liputan dan livestreaming event Sparkling Nganjuk Carnival dengan setup multi-camera.</p>
+            <div class="portfolio-tags">
+              <span>Event</span><span>Livestreaming</span><span>OBS</span>
+            </div>
+            <div class="portfolio-links">
+              <a href="#" class="portfolio-link"><i class="fab fa-youtube"></i> Tonton di YouTube</a>
+            </div>
+            <div class="portfolio-date">Okt 2025</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Pencapaian</span>
+        <h2 class="section-title">Sertifikat & Penghargaan</h2>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card cert-card-award">
+          <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+          <div class="cert-content">
+            <span class="cert-badge">🏆 Juara 1</span>
+            <h3>Kategori Aplikasi Terbaik posCare</h3>
+            <p>TIF Exhibition | Politeknik Negeri Jember psdku Kampus 3 Nganjuk</p>
+            <span class="cert-date">Feb 2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-content">
+            <h3>English Proficiency Test (EPT)</h3>
+            <p>Politeknik Negeri Jember — Skor 65/140 (CEFR A2)</p>
+            <span class="cert-date">Jun 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="cert-content">
+            <h3>Bimtek Parafase Sipora Turnitin</h3>
+            <p>Politeknik Negeri Jember</p>
+            <span class="cert-date">Jul 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-palette"></i></div>
+          <div class="cert-content">
+            <h3>Bootcamp UI/UX</h3>
+            <p>Interactive Thingking: UI/UX in Action | Politeknik Negeri Jember</p>
+            <span class="cert-date">Jun 2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-users"></i></div>
+          <div class="cert-content">
+            <h3>Study Club UI/UX</h3>
+            <p>Politeknik Negeri Jember</p>
+            <span class="cert-date">Jun 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Hubungi Saya</span>
+        <h2 class="section-title">Kontak</h2>
+        <p class="section-desc">Terbuka untuk peluang kolaborasi, proyek freelance, maupun diskusi seputar teknologi dan media kreatif.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:meizhadva@gmail.com" class="contact-card">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">meizhadva@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+6289501220201" class="contact-card">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Telepon</span>
+            <span class="contact-value">+62 895-0122-0201</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/moh-distyar-meizha-y-540a10404" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">moh-distyar-meizha-y</span>
+          </div>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Lokasi</span>
+            <span class="contact-value">Nganjuk, Jawa Timur</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Moh Distyar Meizha Yusuf. Dibuat dengan ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
