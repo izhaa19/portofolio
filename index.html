@@ -344,57 +344,85 @@
         <span class="section-label">Pencapaian</span>
         <h2 class="section-title">Sertifikat & Penghargaan</h2>
       </div>
-      <div class="cert-grid">
+      <div class="cert-gallery">
 
-        <div class="cert-card cert-card-award">
-          <div class="cert-icon"><i class="fas fa-trophy"></i></div>
-          <div class="cert-content">
-            <span class="cert-badge">🏆 Juara 1</span>
-            <h3>Kategori Aplikasi Terbaik posCare</h3>
-            <p>TIF Exhibition | Politeknik Negeri Jember psdku Kampus 3 Nganjuk</p>
-            <span class="cert-date">Feb 2026</span>
+        <!-- Juara 1 - belum ada file -->
+        <div class="cert-gallery-card cert-gallery-award">
+          <div class="cert-gallery-preview cert-no-file">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="cert-gallery-info">
+            <span class="cert-gallery-badge">🏆 Juara 1</span>
+            <h3>Aplikasi Terbaik posCare</h3>
+            <p>TIF Exhibition | Politeknik Negeri Jember</p>
+            <span class="cert-gallery-date">Feb 2026</span>
+            <span class="cert-soon">Sertifikat menyusul</span>
           </div>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-          <div class="cert-content">
+        <!-- EPT -->
+        <div class="cert-gallery-card" onclick="openCert('https://drive.google.com/file/d/1D0BG8msE2NRufHDdJdavSSeoK4QQNDmn/preview')">
+          <div class="cert-gallery-preview">
+            <iframe src="https://drive.google.com/file/d/1D0BG8msE2NRufHDdJdavSSeoK4QQNDmn/preview" title="EPT" tabindex="-1"></iframe>
+            <div class="cert-overlay"><i class="fas fa-expand"></i> Lihat</div>
+          </div>
+          <div class="cert-gallery-info">
             <h3>English Proficiency Test (EPT)</h3>
             <p>Politeknik Negeri Jember — Skor 65/140 (CEFR A2)</p>
-            <span class="cert-date">Jun 2025</span>
+            <span class="cert-gallery-date">Jun 2025</span>
           </div>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-file-alt"></i></div>
-          <div class="cert-content">
+        <!-- Bimtek Turnitin -->
+        <div class="cert-gallery-card" onclick="openCert('https://drive.google.com/file/d/1vD3M9ZPm3ScM0jJIINKXYSSHf1CI_JSO/preview')">
+          <div class="cert-gallery-preview">
+            <iframe src="https://drive.google.com/file/d/1vD3M9ZPm3ScM0jJIINKXYSSHf1CI_JSO/preview" title="Bimtek Turnitin" tabindex="-1"></iframe>
+            <div class="cert-overlay"><i class="fas fa-expand"></i> Lihat</div>
+          </div>
+          <div class="cert-gallery-info">
             <h3>Bimtek Parafase Sipora Turnitin</h3>
             <p>Politeknik Negeri Jember</p>
-            <span class="cert-date">Jul 2025</span>
+            <span class="cert-gallery-date">Jul 2025</span>
           </div>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-palette"></i></div>
-          <div class="cert-content">
+        <!-- Bootcamp UI/UX -->
+        <div class="cert-gallery-card" onclick="openCert('https://drive.google.com/file/d/1Ny_pqREYYfozMvhXaK2T3VLBoja9um0D/preview')">
+          <div class="cert-gallery-preview">
+            <iframe src="https://drive.google.com/file/d/1Ny_pqREYYfozMvhXaK2T3VLBoja9um0D/preview" title="Bootcamp UI/UX" tabindex="-1"></iframe>
+            <div class="cert-overlay"><i class="fas fa-expand"></i> Lihat</div>
+          </div>
+          <div class="cert-gallery-info">
             <h3>Bootcamp UI/UX</h3>
             <p>Interactive Thingking: UI/UX in Action | Politeknik Negeri Jember</p>
-            <span class="cert-date">Jun 2025</span>
+            <span class="cert-gallery-date">Jun 2025</span>
           </div>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-icon"><i class="fas fa-users"></i></div>
-          <div class="cert-content">
+        <!-- Study Club UI/UX -->
+        <div class="cert-gallery-card" onclick="openCert('https://drive.google.com/file/d/18i534HlnKGXHk49lAsu4v46YHJQzbMMA/preview')">
+          <div class="cert-gallery-preview">
+            <iframe src="https://drive.google.com/file/d/18i534HlnKGXHk49lAsu4v46YHJQzbMMA/preview" title="Study Club UI/UX" tabindex="-1"></iframe>
+            <div class="cert-overlay"><i class="fas fa-expand"></i> Lihat</div>
+          </div>
+          <div class="cert-gallery-info">
             <h3>Study Club UI/UX</h3>
             <p>Politeknik Negeri Jember</p>
-            <span class="cert-date">Jun 2025</span>
+            <span class="cert-gallery-date">Jun 2025</span>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+
+  <!-- Lightbox Modal -->
+  <div class="cert-modal" id="certModal" onclick="closeCert(event)">
+    <div class="cert-modal-inner">
+      <button class="cert-modal-close" onclick="closeCert()"><i class="fas fa-times"></i></button>
+      <iframe id="certModalFrame" src="" title="Sertifikat"></iframe>
+    </div>
+  </div>
 
   <!-- Contact -->
   <section class="section section-alt" id="contact">

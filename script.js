@@ -109,3 +109,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// ===== CERTIFICATE LIGHTBOX =====
+function openCert(url) {
+  const modal = document.getElementById('certModal');
+  const frame = document.getElementById('certModalFrame');
+  frame.src = url;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCert(e) {
+  if (!e || e.target === document.getElementById('certModal') || e.currentTarget.classList.contains('cert-modal-close')) {
+    const modal = document.getElementById('certModal');
+    const frame = document.getElementById('certModalFrame');
+    modal.classList.remove('active');
+    frame.src = '';
+    document.body.style.overflow = '';
+  }
+}
+
+// Close with Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeCert();
+});
